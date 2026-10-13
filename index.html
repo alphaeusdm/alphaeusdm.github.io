@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alphaeus Dmonte | NLP and LLM Researcher</title>
+<meta name="description" content="PhD candidate at George Mason University working on natural language processing and large language models.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232f4bff%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22serif%22>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f9; --ink:#141c2e; --muted:#566079; --line:#d5dae6; --accent:#2f4bff; --mask:#141c2e; --surface:#e9edf5;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1420;--ink:#e7ebf5;--muted:#98a3bd;--line:#252e44;--accent:#93a6ff;--mask:#e7ebf5;--surface:#161e30}
+}
+:root[data-theme="dark"]{--bg:#0e1420;--ink:#e7ebf5;--muted:#98a3bd;--line:#252e44;--accent:#93a6ff;--mask:#e7ebf5;--surface:#161e30}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--serif);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:3.5rem;font:500 .9rem var(--sans)}
+nav a{color:var(--muted);text-decoration:none;margin-left:1.25rem}
+nav a:hover{color:var(--ink)}
+.brand{color:var(--ink);text-decoration:none;font-weight:600}
+#theme{background:none;border:1px solid var(--line);color:var(--muted);font:500 .8rem var(--sans);padding:.25rem .6rem;border-radius:6px;cursor:pointer;margin-left:1.25rem}
+#theme:hover{color:var(--ink)}
+@media(max-width:640px){nav a.hide-s{display:none}}
+
+.hero{padding:5rem 0 3.5rem}
+.hero h1{font:500 clamp(2.9rem,8vw,5.2rem)/1 var(--serif);letter-spacing:-.02em;margin:0 0 1.75rem}
+.lede{font:400 clamp(1.4rem,3.2vw,2rem)/1.4 var(--serif);max-width:34ch;margin:0 0 2rem}
+.tok{display:inline-block;position:relative;transition:color .35s}
+.tok.masked{color:transparent;user-select:none}
+.tok::after{content:"";position:absolute;left:0;right:0;top:.18em;bottom:.12em;background:var(--mask);border-radius:3px;opacity:0;transition:opacity .5s ease;pointer-events:none}
+.tok.masked::after{opacity:1}
+.status{font:500 .95rem var(--sans);color:var(--muted);margin:0 0 1.75rem;max-width:52ch}
+.links{display:flex;flex-wrap:wrap;gap:.6rem;font:500 .92rem var(--sans)}
+.links a{padding:.5rem .95rem;border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none}
+.links a:first-child{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.links a:hover{border-color:var(--accent)}
+
+section{border-top:1px solid var(--line);padding:3rem 0}
+.row{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem 2.5rem}
+@media(max-width:760px){.row{grid-template-columns:1fr}}
+h2{font:600 .95rem var(--sans);color:var(--muted);margin:.35rem 0 0}
+.body{max-width:42rem}
+.body p{margin:0 0 1rem}
+
+.job{margin-bottom:2.25rem;padding-left:1.25rem;border-left:2px solid var(--line);position:relative}
+.job::before{content:"";position:absolute;left:-6px;top:.6rem;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job h3{font:500 1.3rem/1.3 var(--serif);margin:0}
+.meta{font:500 .85rem var(--sans);color:var(--muted);margin:.15rem 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.4rem}
+
+.pub{padding:.9rem 0;border-bottom:1px solid var(--line)}
+.pub:first-child{padding-top:0}
+.pub .t{font-weight:500}
+.pub .v{font:400 .85rem var(--sans);color:var(--muted);margin-top:.2rem}
+.pub .v b{color:var(--accent);font-weight:600}
+
+dl{margin:0}
+dt{font:600 .9rem var(--sans);margin-top:1rem}
+dt:first-child{margin-top:0}
+dd{margin:.15rem 0 0;color:var(--muted)}
+.edu{margin-bottom:1.1rem}
+.edu b{font-weight:500;font-size:1.15rem}
+.edu span{display:block;font:400 .9rem var(--sans);color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(--sans);color:var(--muted)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tok::after{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Alphaeus Dmonte</a>
+    <nav>
+      <a href="#experience" class="hide-s">Experience</a>
+      <a href="#publications" class="hide-s">Publications</a>
+      <a href="#skills" class="hide-s">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <h1>Alphaeus Dmonte</h1>
+    <p class="lede" id="lede">I teach language models to <span class="tok">understand</span> text across <span class="tok">languages</span>, <span class="tok">domains</span>, and <span class="tok">contexts</span>.</p>
+    <p class="status">PhD candidate in Information Technology at George Mason University, graduating May 2027. Open to Research Scientist and Applied Scientist roles.</p>
+    <div class="links">
+      <a href="mailto:admonte@gmu.edu">Email me</a>
+      <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/alphaeusdm" rel="noopener">GitHub</a>
+      <a href="Alphaeus_Dmonte_Resume.pdf">Resume (PDF)</a>
+    </div>
+  </div>
+
+  <section id="about"><div class="row">
+    <h2>About</h2>
+    <div class="body">
+      <p>I work on natural language processing and large language models at George Mason University, advised by Dr. Marcos Zampieri. My research covers LLM fine-tuning and post-training, text understanding and generation, and building multilingual datasets.</p>
+      <p>My work has appeared at EMNLP, EACL, AACL-IJCNLP, CIKM, and other venues. I have also shipped NLP and machine learning work in industry at Qualtrics, Cambium Assessment, and Retail Business Services.</p>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="row">
+    <h2>Experience</h2>
+    <div class="body">
+      <div class="job">
+        <h3>Machine Learning Intern, Cambium Assessment</h3>
+        <div class="meta">Remote. June 2026 to present</div>
+        <ul>
+          <li>Built a transformer-based training pipeline for Spanish automated scoring, reaching 80% accuracy.</li>
+          <li>Developed translation-based approaches for training and evaluating scoring models on Science essays.</li>
+          <li>Created data augmentation techniques that reduced class imbalance and improved accuracy by 5%.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Graduate Research Assistant, George Mason University</h3>
+        <div class="meta">Fairfax, VA. January 2023 to present</div>
+        <ul>
+          <li>Designed SUNDER to improve contextual understanding in LLMs, with F1 gains of up to 15% over baselines.</li>
+          <li>Built a RAG-based question-answering approach that gained 3% accuracy and cut computation by 33%.</li>
+          <li>Created a multilingual dataset and an IR-based lexical simplification pipeline that reached 76.5% accuracy.</li>
+          <li>Open-sourced benchmark datasets of human, AI, and hybrid text, reaching 98% F1 on authorship attribution.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Applied Scientist Intern, Qualtrics</h3>
+        <div class="meta">Reston, VA. June to August 2025</div>
+        <ul>
+          <li>Applied model merging in a multilingual setting, improving cross-lingual performance across 5 languages.</li>
+          <li>Benchmarked merging strategies across tasks, with gains of up to 5%.</li>
+          <li>Automated evaluation pipelines, cutting training time by 67% and compute costs by 60%.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Machine Learning / Data Science Co-op, Retail Business Services</h3>
+        <div class="meta">Quincy, MA. January to June 2022</div>
+        <ul>
+          <li>Built a Rasa reporting assistant for PowerBI data that cut analysts' query time by 50%.</li>
+          <li>Fine-tuned PyTorch vision models on Azure Percept DK for product detection at 94% accuracy.</li>
+          <li>Automated end-to-end ML pipelines with Azure ML and GitHub Actions.</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="publications"><div class="row">
+    <h2>Publications</h2>
+    <div class="body">
+      <div class="pub"><div class="t">SUNDER: Selective Unmasking for Text Understanding</div><div class="v">Dmonte, Ranasinghe, Zampieri. <b>EMNLP 2026</b> (accepted)</div></div>
+      <div class="pub"><div class="t">Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging</div><div class="v">Dmonte, Gupta, Perry, Arehart. <b>EACL 2026</b></div></div>
+      <div class="pub"><div class="t">Exploring the Performance of Large Language Models on Subjective Span Identification Tasks</div><div class="v">Dmonte, Oruche, Ranasinghe, Zampieri, Calyam. <b>AACL-IJCNLP 2025</b></div></div>
+      <div class="pub"><div class="t">Disentangling Complex Questions in LLMs via Multi-Hop Dependency Graphs</div><div class="v">Oruche, Dmonte, Seth, Zeng, Zhang, Zampieri, Calyam. <b>CIKM 2025</b></div></div>
+      <div class="pub"><div class="t">On the Effects of Machine Translation on Offensive Language Detection</div><div class="v">Dmonte, Satapara, Alsudais, Ranasinghe, Zampieri. <b>Social Network Analysis and Mining, 2025</b></div></div>
+      <div class="pub"><div class="t">An Evaluation of Large Language Models in Financial Sentiment Analysis</div><div class="v">Dmonte, Ko, Zampieri. <b>IEEE Workshop on LLMs for Finance, 2024</b></div></div>
+      <div class="pub"><div class="t">Towards Generalized Offensive Language Identification</div><div class="v">Dmonte, Arya, Ranasinghe, Zampieri. <b>ASONAM 2024</b></div></div>
+      <div class="pub"><div class="t">Classifying Human-Generated and AI-Generated Election Claims in Social Media</div><div class="v">Dmonte, Zampieri, Lybarger, Albanese, Coulter. <b>SECRYPT 2024</b></div></div>
+      <div class="pub"><div class="t">OffensEval 2023: Offensive Language Identification in the Age of Large Language Models</div><div class="v">Zampieri, Rosenthal, Nakov, Dmonte, Ranasinghe. <b>Natural Language Engineering, 2023</b></div></div>
+      <div class="pub"><div class="t">ALEXSIS+: Improving Substitute Generation and Selection for Lexical Simplification with Information Retrieval</div><div class="v">North, Dmonte, Ranasinghe, Shardlow, Zampieri. <b>BEA Workshop, 2023</b></div></div>
+      <p style="font:400 .9rem var(--sans);color:var(--muted);margin-top:1.25rem">Presented at EACL 2026, AACL-IJCNLP 2025, ASONAM 2024, the Workshop on LLMs for Finance 2024, and the CCI Symposium 2024.</p>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="row">
+    <h2>Skills</h2>
+    <div class="body"><dl>
+      <dt>Languages</dt><dd>Python, Java, C, C++, SQL, JavaScript</dd>
+      <dt>ML frameworks</dt><dd>Transformers, Hugging Face, LangChain, PyTorch, TensorFlow, scikit-learn, Pandas, NumPy</dd>
+      <dt>Cloud and tools</dt><dd>Git, Docker, AWS, Azure ML, Databricks, Google Colab</dd>
+      <dt>Databases</dt><dd>PostgreSQL, MongoDB</dd>
+      <dt>Web</dt><dd>Flask, React</dd>
+    </dl></div>
+  </div></section>
+
+  <section id="education"><div class="row">
+    <h2>Education and awards</h2>
+    <div class="body">
+      <div class="edu"><b>PhD, Information Technology</b><span>George Mason University. Expected May 2027. Advisor: Dr. Marcos Zampieri</span></div>
+      <div class="edu"><b>MS, Computer Science</b><span>Rochester Institute of Technology. December 2022</span></div>
+      <div class="edu"><b>BE, Computer Engineering</b><span>University of Mumbai. October 2020</span></div>
+      <p style="margin-top:1.5rem">Doctoral Research Scholars Award, George Mason University. Merit-based Scholarship, Rochester Institute of Technology.</p>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="row">
+    <h2>Contact</h2>
+    <div class="body">
+      <p>For research collaborations or Research and Applied Scientist roles, email <a href="mailto:admonte@gmu.edu">admonte@gmu.edu</a>. You can also find me on <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener">LinkedIn</a> and <a href="https://github.com/alphaeusdm" rel="noopener">GitHub</a>.</p>
+    </div>
+  </div></section>
+</div>
+</main>
+
+<footer><div class="wrap">Alphaeus Dmonte. Fairfax, Virginia.</div></footer>
+
+<script>
+// Theme toggle (remembered per browser when storage is available)
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s)}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=getComputedStyle(root).getPropertyValue('--bg').trim()==='#0e1420';
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+  });
+})();
+
+// Hero: the highlighted words start masked, then unmask one at a time. Click the sentence to replay.
+(function(){
+  var toks=[].slice.call(document.querySelectorAll('#lede .tok'));
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var timers=[];
+  function run(){
+    timers.forEach(clearTimeout);timers=[];
+    if(reduce)return;
+    toks.forEach(function(t){t.classList.remove('read');t.classList.add('masked')});
+    toks.forEach(function(t,i){
+      timers.push(setTimeout(function(){t.classList.add('read');t.classList.remove('masked')},700+i*650));
+    });
+  }
+  document.getElementById('lede').addEventListener('click',run);
+  run();
+})();
+</script>
+</body>
+</html>
