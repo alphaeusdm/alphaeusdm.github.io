@@ -38,6 +38,12 @@ nav a:hover{color:var(--ink)}
 
 .hero{padding:5rem 0 3.5rem}
 .hero h1{font:500 clamp(2.9rem,8vw,5.2rem)/1 var(--serif);letter-spacing:-.02em;margin:0 0 1.75rem}
+.hero{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:center}
+.photo{width:220px;height:220px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .photo{order:-1;width:112px;height:112px}
+}
 .lede{font:400 clamp(1.4rem,3.2vw,2rem)/1.4 var(--serif);max-width:34ch;margin:0 0 2rem}
 .tok{display:inline-block;position:relative;transition:color .35s}
 .tok.masked{color:transparent;user-select:none}
@@ -106,6 +112,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       <a href="https://github.com/alphaeusdm" rel="noopener">GitHub</a>
       <a href="Alphaeus_Dmonte_Resume.pdf">Resume (PDF)</a>
     </div>
+    <img class="photo" src="profile.jpg" alt="Photo of Alphaeus Dmonte" width="220" height="220">
   </div>
 
   <section id="about"><div class="row">
