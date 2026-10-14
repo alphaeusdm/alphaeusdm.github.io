@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 :root{
   --bg:#f3f5f9; --ink:#141c2e; --muted:#566079; --line:#d5dae6; --accent:#2f4bff; --mask:#141c2e; --surface:#e9edf5;
@@ -74,6 +75,10 @@ h2{font:600 .95rem var(--sans);color:var(--muted);margin:.35rem 0 0}
 .pub .t{font-weight:500}
 .pub .v{font:400 .85rem var(--sans);color:var(--muted);margin-top:.2rem}
 .pub .v b{color:var(--accent);font-weight:600}
+.pub .l{display:flex;flex-wrap:wrap;gap:.5rem 1.1rem;margin-top:.5rem;font:500 .85rem var(--sans)}
+.pub .l a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none}
+.pub .l a:hover{text-decoration:underline}
+.pub .l i{font-size:.95rem}
 
 dl{margin:0}
 dt{font:600 .9rem var(--sans);margin-top:1rem}
@@ -108,10 +113,11 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
     <p class="lede" id="lede">I teach language models to <span class="tok">understand</span> text across <span class="tok">languages</span>, <span class="tok">domains</span>, and <span class="tok">contexts</span>.</p>
     <p class="status">PhD candidate in Information Technology at George Mason University, graduating May 2027. Open to Research Scientist and Applied Scientist roles.</p>
     <div class="links">
-      <a href="mailto:admonte@gmu.edu">Email me</a>
-      <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/alphaeusdm" rel="noopener">GitHub</a>
-      <a href="Alphaeus_Dmonte_Resume.pdf">Resume (PDF)</a>
+      <a href="mailto:admonte@gmu.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email me</a>
+      <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+      <a href="https://github.com/alphaeusdm" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+      <a href="https://scholar.google.com/citations?user=yN33UsIAAAAJ" rel="noopener"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</a>
+      <a href="Alphaeus_Dmonte_Resume.pdf"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Resume</a>
     </div>
   </div>
   <img class="photo" src="profile.jpg" alt="Photo of Alphaeus Dmonte" width="220" height="220">
@@ -171,16 +177,105 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
   <section id="publications"><div class="row">
     <h2>Publications</h2>
     <div class="body">
-      <div class="pub"><div class="t">SUNDER: Selective Unmasking for Text Understanding</div><div class="v">Dmonte, Ranasinghe, Zampieri. <b>EMNLP 2026</b> (accepted)</div></div>
-      <div class="pub"><div class="t">Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging</div><div class="v">Dmonte, Gupta, Perry, Arehart. <b>EACL 2026</b></div></div>
-      <div class="pub"><div class="t">Exploring the Performance of Large Language Models on Subjective Span Identification Tasks</div><div class="v">Dmonte, Oruche, Ranasinghe, Zampieri, Calyam. <b>AACL-IJCNLP 2025</b></div></div>
-      <div class="pub"><div class="t">Disentangling Complex Questions in LLMs via Multi-Hop Dependency Graphs</div><div class="v">Oruche, Dmonte, Seth, Zeng, Zhang, Zampieri, Calyam. <b>CIKM 2025</b></div></div>
-      <div class="pub"><div class="t">On the Effects of Machine Translation on Offensive Language Detection</div><div class="v">Dmonte, Satapara, Alsudais, Ranasinghe, Zampieri. <b>Social Network Analysis and Mining, 2025</b></div></div>
-      <div class="pub"><div class="t">An Evaluation of Large Language Models in Financial Sentiment Analysis</div><div class="v">Dmonte, Ko, Zampieri. <b>IEEE Workshop on LLMs for Finance, 2024</b></div></div>
-      <div class="pub"><div class="t">Towards Generalized Offensive Language Identification</div><div class="v">Dmonte, Arya, Ranasinghe, Zampieri. <b>ASONAM 2024</b></div></div>
-      <div class="pub"><div class="t">Classifying Human-Generated and AI-Generated Election Claims in Social Media</div><div class="v">Dmonte, Zampieri, Lybarger, Albanese, Coulter. <b>SECRYPT 2024</b></div></div>
-      <div class="pub"><div class="t">OffensEval 2023: Offensive Language Identification in the Age of Large Language Models</div><div class="v">Zampieri, Rosenthal, Nakov, Dmonte, Ranasinghe. <b>Natural Language Engineering, 2023</b></div></div>
-      <div class="pub"><div class="t">ALEXSIS+: Improving Substitute Generation and Selection for Lexical Simplification with Information Retrieval</div><div class="v">North, Dmonte, Ranasinghe, Shardlow, Zampieri. <b>BEA Workshop, 2023</b></div></div>
+      <div class="pub">
+        <div class="t">SUNDER: Selective Unmasking for Text Understanding</div>
+        <div class="v">Dmonte, Ranasinghe, Zampieri. <b>EMNLP 2026</b> (accepted)</div>
+        <div class="l">
+          <a href="" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/alphaeusdm/SUNDER.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Claim verification in the age of large language models: A survey</div>
+        <div class="v">Dmonte, Oruche, Zampieri, Calyam, Augenstein. <b>ACL (SRW) 2026</b></div>
+        <div class="l">
+          <a href="https://aclanthology.org/2026.acl-srw.2.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://aclanthology.org/2026.acl-srw.2/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/LanguageTechnologyLab/Claim-Verification-Papers.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging</div>
+        <div class="v">Dmonte, Gupta, Perry, Arehart. <b>EACL (Industry) 2026</b></div>
+        <div class="l">
+          <a href="https://aclanthology.org/2026.eacl-industry.43.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://aclanthology.org/2026.eacl-industry.43/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <!-- <a href="https://github.com/alphaeusdm/REPO" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a> -->
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Exploring the Performance of Large Language Models on Subjective Span Identification Tasks</div>
+        <div class="v">Dmonte, Oruche, Ranasinghe, Zampieri, Calyam. <b>AACL-IJCNLP 2025</b></div>
+        <div class="l">
+          <a href="https://aclanthology.org/2025.ijcnlp-short.30.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://aclanthology.org/2025.ijcnlp-short.30/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/alphaeusdm/tokens-spans-identification-with-llms.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Disentangling Complex Questions in LLMs via Multi-Hop Dependency Graphs</div>
+        <div class="v">Oruche, Dmonte, Seth, Zeng, Zhang, Zampieri, Calyam. <b>CIKM 2025</b></div>
+        <div class="l">
+          <a href="https://dl.acm.org/doi/pdf/10.1145/3746252.3761037" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://dl.acm.org/doi/abs/10.1145/3746252.3761037" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <!-- <a href="https://github.com/alphaeusdm/REPO" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a> -->
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">On the Effects of Machine Translation on Offensive Language Detection</div>
+        <div class="v">Dmonte, Satapara, Alsudais, Ranasinghe, Zampieri. <b>Social Network Analysis and Mining, 2025</b></div>
+        <div class="l">
+          <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
+          <a href="https://link.springer.com/article/10.1007/s13278-024-01398-4" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/LanguageTechnologyLab/MT-Offense.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">An Evaluation of Large Language Models in Financial Sentiment Analysis</div>
+        <div class="v">Dmonte, Ko, Zampieri. <b>IEEE Workshop on LLMs for Finance, 2024</b></div>
+        <div class="l">
+          <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
+          <a href="https://ieeexplore.ieee.org/abstract/document/10825272" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/alphaeusdm/REPO" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Towards Generalized Offensive Language Identification</div>
+        <div class="v">Dmonte, Arya, Ranasinghe, Zampieri. <b>ASONAM 2024</b></div>
+        <div class="l">
+          <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-78541-2_17" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/TharinduDR/GeneralOffense.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">Classifying Human-Generated and AI-Generated Election Claims in Social Media</div>
+        <div class="v">Dmonte, Zampieri, Lybarger, Albanese, Coulter. <b>SECRYPT 2024</b></div>
+        <div class="l">
+          <a href="https://arxiv.org/pdf/2404.16116" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://arxiv.org/abs/2404.16116" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/LanguageTechnologyLab/ElectAI.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">OffensEval 2023: Offensive Language Identification in the Age of Large Language Models</div>
+        <div class="v">Zampieri, Rosenthal, Nakov, Dmonte, Ranasinghe. <b>Natural Language Engineering, 2023</b></div>
+        <div class="l">
+          <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2605A4C9E45354D36C0B732B49DB8CA3/S1351324923000517a.pdf/div-class-title-offenseval-2023-offensive-language-identification-in-the-age-of-large-language-models-div.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/offenseval-2023-offensive-language-identification-in-the-age-of-large-language-models/2605A4C9E45354D36C0B732B49DB8CA3" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <!-- <a href="https://github.com/alphaeusdm/REPO" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a> -->
+        </div>
+      </div>
+      <div class="pub">
+        <div class="t">ALEXSIS+: Improving Substitute Generation and Selection for Lexical Simplification with Information Retrieval</div>
+        <div class="v">North, Dmonte, Ranasinghe, Shardlow, Zampieri. <b>BEA Workshop, 2023</b></div>
+        <div class="l">
+          <a href="https://aclanthology.org/2023.bea-1.33.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+          <a href="https://aclanthology.org/2023.bea-1.33/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
+          <a href="https://github.com/LanguageTechnologyLab/ALEXSIS2.0.git" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </div>
       <p style="font:400 .9rem var(--sans);color:var(--muted);margin-top:1.25rem">Presented at EACL 2026, AACL-IJCNLP 2025, ASONAM 2024, the Workshop on LLMs for Finance 2024, and the CCI Symposium 2024.</p>
     </div>
   </div></section>
