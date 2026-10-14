@@ -92,6 +92,8 @@ dd{margin:.15rem 0 0;color:var(--muted)}
 .edu{margin-bottom:1.1rem}
 .edu b{font-weight:500;font-size:1.15rem}
 .edu span{display:block;font:400 .9rem var(--sans);color:var(--muted)}
+.edu{margin-bottom:1.5rem}
+.edu .award{display:flex;align-items:center;gap:.45rem;margin-top:.35rem;color:var(--accent);font-weight:500}
 footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(--sans);color:var(--muted)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tok::after{transition:none}}
 </style>
@@ -113,10 +115,11 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
 <main id="top">
 <div class="wrap">
   <div class="hero">
+  <img class="photo" src="profile.jpg" alt="Photo of Alphaeus Dmonte" width="220" height="220">
   <div class="hero-text">
     <h1>Alphaeus Dmonte</h1>
-    <p class="lede" id="lede">I teach language models to <span class="tok">understand</span> text across <span class="tok">languages</span>, <span class="tok">domains</span>, and <span class="tok">contexts</span>.</p>
-    <p class="status">PhD candidate in Information Technology at George Mason University, graduating May 2027. Open to Research Scientist and Applied Scientist roles.</p>
+    <!-- <p class="lede" id="lede">I teach language models to <span class="tok">understand</span> text across <span class="tok">languages</span>, <span class="tok">domains</span>, and <span class="tok">contexts</span>.</p> -->
+    <p class="status">PhD candidate in Information Technology at George Mason University. Open to full-time Research Scientist, Applied Scientist, and Machine Learning Engineer roles in NLP, LLMs, and applied AI starting May 2027.</p>
     <div class="links">
       <a href="mailto:admonte@gmu.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
       <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
@@ -125,13 +128,12 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       <a href="Alphaeus_Dmonte_Resume.pdf" aria-label="Resume (PDF)" title="Resume (PDF)"><i class="fa-solid fa-file-pdf"></i></a>
     </div>
   </div>
-  <img class="photo" src="profile.jpg" alt="Photo of Alphaeus Dmonte" width="220" height="220">
 </div>
 
   <section id="about"><div class="row">
     <h2>About</h2>
     <div class="body">
-      <p>I work on natural language processing and large language models at George Mason University, advised by Dr. Marcos Zampieri. My research covers LLM fine-tuning and post-training, text understanding and generation, and building multilingual datasets.</p>
+      <p>I work on natural language processing and large language models at George Mason University, advised by Dr. Marcos Zampieri. My current research focuses on investigating contextual understanding in LLMs and developing approaches to improve it. I am additionally interested in LLM fine-tuning and post-training, text generation, question answering, and building multilingual datasets.</p>
       <p>My work has appeared at EMNLP, EACL, AACL-IJCNLP, CIKM, and other venues. I have also shipped NLP and machine learning work in industry at Qualtrics, Cambium Assessment, and Retail Business Services.</p>
     </div>
   </div></section>
@@ -299,10 +301,18 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
   <section id="education"><div class="row">
     <h2>Education and awards</h2>
     <div class="body">
-      <div class="edu"><b>PhD, Information Technology</b><span>George Mason University. Expected May 2027. Advisor: Dr. Marcos Zampieri</span></div>
-      <div class="edu"><b>MS, Computer Science</b><span>Rochester Institute of Technology. December 2022</span></div>
+      <div class="edu">
+        <b>PhD, Information Technology</b>
+        <span>George Mason University. Expected May 2027. Advisor: Dr. Marcos Zampieri</span>
+        <span class="award"><i class="fa-solid fa-award" aria-hidden="true"></i>Doctoral Research Scholars Award</span>
+      </div>
+      <div class="edu">
+        <b>MS, Computer Science</b>
+        <span>Rochester Institute of Technology. December 2022</span>
+        <span class="award"><i class="fa-solid fa-award" aria-hidden="true"></i>Merit-based Scholarship</span>
+      </div>
       <div class="edu"><b>BE, Computer Engineering</b><span>University of Mumbai. October 2020</span></div>
-      <p style="margin-top:1.5rem">Doctoral Research Scholars Award, George Mason University. Merit-based Scholarship, Rochester Institute of Technology.</p>
+      <!-- <p style="margin-top:1.5rem">Doctoral Research Scholars Award, George Mason University. Merit-based Scholarship, Rochester Institute of Technology.</p> -->
     </div>
   </div></section>
 
