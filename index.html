@@ -52,9 +52,14 @@ nav a:hover{color:var(--ink)}
 .tok.masked::after{opacity:1}
 .status{font:500 .95rem var(--sans);color:var(--muted);margin:0 0 1.75rem;max-width:52ch}
 .links{display:flex;flex-wrap:wrap;gap:.6rem;font:500 .92rem var(--sans)}
-.links a{padding:.5rem .95rem;border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none}
+/* .links a{padding:.5rem .95rem;border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none}
 .links a:first-child{background:var(--accent);border-color:var(--accent);color:var(--bg)}
-.links a:hover{border-color:var(--accent)}
+.links a:hover{border-color:var(--accent)} */
+.links a{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border:1px solid var(--line);border-radius:8px;color:var(--ink);text-decoration:none;transition:border-color .2s,color .2s}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.links a:first-child{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.links a:first-child:hover{color:var(--bg);opacity:.85}
+.links i{font-size:1.25rem}
 
 section{border-top:1px solid var(--line);padding:3rem 0}
 .row{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem 2.5rem}
@@ -113,11 +118,11 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
     <p class="lede" id="lede">I teach language models to <span class="tok">understand</span> text across <span class="tok">languages</span>, <span class="tok">domains</span>, and <span class="tok">contexts</span>.</p>
     <p class="status">PhD candidate in Information Technology at George Mason University, graduating May 2027. Open to Research Scientist and Applied Scientist roles.</p>
     <div class="links">
-      <a href="mailto:admonte@gmu.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email me</a>
-      <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
-      <a href="https://github.com/alphaeusdm" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
-      <a href="https://scholar.google.com/citations?user=yN33UsIAAAAJ" rel="noopener"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</a>
-      <a href="Alphaeus_Dmonte_Resume.pdf"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Resume</a>
+      <a href="mailto:admonte@gmu.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/alphaeus-dmonte-8772ba161" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/alphaeusdm" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://scholar.google.com/citations?user=yN33UsIAAAAJ" rel="noopener"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i></a>
+      <a href="Alphaeus_Dmonte_Resume.pdf" aria-label="Resume (PDF)" title="Resume (PDF)"><i class="fa-solid fa-file-pdf"></i></a>
     </div>
   </div>
   <img class="photo" src="profile.jpg" alt="Photo of Alphaeus Dmonte" width="220" height="220">
