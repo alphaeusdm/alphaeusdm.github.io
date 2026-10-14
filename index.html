@@ -38,9 +38,9 @@ nav a:hover{color:var(--ink)}
 @media(max-width:640px){nav a.hide-s{display:none}}
 
 .hero{padding:5rem 0 3.5rem}
-.hero h1{font:500 clamp(2.9rem,8vw,5.2rem)/1 var(--serif);letter-spacing:-.02em;margin:0 0 1.75rem}
-.hero{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:center}
-.photo{width:340px;height:420px;object-fit:cover;object-position:center top;border-radius:12px;border:1px solid var(--line)}
+.hero h1{font:500 clamp(2.2rem,5.2vw,3.9rem)/1.05 var(--serif);letter-spacing:-.02em;margin:0 0 1.75rem;white-space:nowrap}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
+.photo{width:240px;height:350px;object-fit:cover;object-position:center top;border-radius:12px;border:1px solid var(--line)}
 @media(max-width:760px){
   .hero{grid-template-columns:1fr}
   .photo{order:-1;width:112px;height:112px}
@@ -133,7 +133,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
   <section id="about"><div class="row">
     <h2>About</h2>
     <div class="body">
-      <p>I work on natural language processing and large language models at George Mason University, advised by Dr. Marcos Zampieri. My current research focuses on investigating contextual understanding in LLMs and developing approaches to improve it. I am additionally interested in LLM fine-tuning and post-training, text generation, question answering, and building multilingual datasets.</p>
+      <p>I work on natural language processing and large language models at George Mason University, advised by Dr. Marcos Marcos Zampieri. My current research focuses on investigating contextual understanding in LLMs and developing approaches to improve it. I am additionally interested in LLM fine-tuning and post-training, text generation, question answering, and building multilingual datasets.</p>
       <p>My work has appeared at EMNLP, EACL, AACL-IJCNLP, CIKM, and other venues. I have also shipped NLP and machine learning work in industry at Qualtrics, Cambium Assessment, and Retail Business Services.</p>
     </div>
   </div></section>
@@ -186,7 +186,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
     <div class="body">
       <div class="pub">
         <div class="t">SUNDER: Selective Unmasking for Text Understanding</div>
-        <div class="v">Dmonte, Ranasinghe, Zampieri. <b>EMNLP 2026</b> (accepted)</div>
+        <div class="v">Alphaeus Dmonte, Tharindu Ranasinghe, Marcos Zampieri. <b>EMNLP 2026</b> (accepted)</div>
         <div class="l">
           <a href="" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -195,7 +195,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Claim verification in the age of large language models: A survey</div>
-        <div class="v">Dmonte, Oruche, Zampieri, Calyam, Augenstein. <b>ACL (SRW) 2026</b></div>
+        <div class="v">Alphaeus Dmonte, Roland Oruche, Marcos Zampieri, Prasad Calyam, Isabelle Augenstein. <b>ACL (SRW) 2026</b></div>
         <div class="l">
           <a href="https://aclanthology.org/2026.acl-srw.2.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://aclanthology.org/2026.acl-srw.2/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -204,7 +204,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging</div>
-        <div class="v">Dmonte, Gupta, Perry, Arehart. <b>EACL (Industry) 2026</b></div>
+        <div class="v">Alphaeus Dmonte, Vidhi Gupta, Daniel J Perry, Mark Arehart. <b>EACL (Industry) 2026</b></div>
         <div class="l">
           <a href="https://aclanthology.org/2026.eacl-industry.43.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://aclanthology.org/2026.eacl-industry.43/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -213,7 +213,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Exploring the Performance of Large Language Models on Subjective Span Identification Tasks</div>
-        <div class="v">Dmonte, Oruche, Ranasinghe, Zampieri, Calyam. <b>AACL-IJCNLP 2025</b></div>
+        <div class="v">Alphaeus Dmonte, Roland Oruche, Tharindu Ranasinghe, Marcos Zampieri, Prasad Calyam. <b>AACL-IJCNLP 2025</b></div>
         <div class="l">
           <a href="https://aclanthology.org/2025.ijcnlp-short.30.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://aclanthology.org/2025.ijcnlp-short.30/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -222,7 +222,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Disentangling Complex Questions in LLMs via Multi-Hop Dependency Graphs</div>
-        <div class="v">Oruche, Dmonte, Seth, Zeng, Zhang, Zampieri, Calyam. <b>CIKM 2025</b></div>
+        <div class="v">Roland Oruche, Alphaeus Dmonte, Vani Seth, Zian Zeng, Yuanxun Zhang, Marcos Zampieri, Prasad Calyam. <b>CIKM 2025</b></div>
         <div class="l">
           <a href="https://dl.acm.org/doi/pdf/10.1145/3746252.3761037" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://dl.acm.org/doi/abs/10.1145/3746252.3761037" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -231,7 +231,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">On the Effects of Machine Translation on Offensive Language Detection</div>
-        <div class="v">Dmonte, Satapara, Alsudais, Ranasinghe, Zampieri. <b>Social Network Analysis and Mining, 2025</b></div>
+        <div class="v">Alphaeus Dmonte, Shrey Satapara, Rehab Alsudais, Tharindu Ranasinghe, Marcos Zampieri. <b>Social Network Analysis and Mining, 2025</b></div>
         <div class="l">
           <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
           <a href="https://link.springer.com/article/10.1007/s13278-024-01398-4" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -240,7 +240,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">An Evaluation of Large Language Models in Financial Sentiment Analysis</div>
-        <div class="v">Dmonte, Ko, Zampieri. <b>IEEE Workshop on LLMs for Finance, 2024</b></div>
+        <div class="v">Alphaeus Dmonte, Eunmi Ko, Marcos Zampieri. <b>IEEE Workshop on LLMs for Finance, 2024</b></div>
         <div class="l">
           <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
           <a href="https://ieeexplore.ieee.org/abstract/document/10825272" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -249,7 +249,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Towards Generalized Offensive Language Identification</div>
-        <div class="v">Dmonte, Arya, Ranasinghe, Zampieri. <b>ASONAM 2024</b></div>
+        <div class="v">Alphaeus Dmonte, Tejas Arya, Tharindu Ranasinghe, Marcos Zampieri. <b>ASONAM 2024</b></div>
         <div class="l">
           <!-- <a href="PAPER_PDF_URL" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a> -->
           <a href="https://link.springer.com/chapter/10.1007/978-3-031-78541-2_17" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -258,7 +258,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">Classifying Human-Generated and AI-Generated Election Claims in Social Media</div>
-        <div class="v">Dmonte, Zampieri, Lybarger, Albanese, Coulter. <b>SECRYPT 2024</b></div>
+        <div class="v">Alphaeus Dmonte, Marcos Zampieri, Kevin Lybarger, Massimiliano Albanese, Genya Coulter. <b>SECRYPT 2024</b></div>
         <div class="l">
           <a href="https://arxiv.org/pdf/2404.16116" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://arxiv.org/abs/2404.16116" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -267,7 +267,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">OffensEval 2023: Offensive Language Identification in the Age of Large Language Models</div>
-        <div class="v">Zampieri, Rosenthal, Nakov, Dmonte, Ranasinghe. <b>Natural Language Engineering, 2023</b></div>
+        <div class="v">Marcos Zampieri, Sara Rosenthal, Preslav Nakov, Alphaeus Dmonte, Tharindu Ranasinghe. <b>Natural Language Engineering, 2023</b></div>
         <div class="l">
           <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2605A4C9E45354D36C0B732B49DB8CA3/S1351324923000517a.pdf/div-class-title-offenseval-2023-offensive-language-identification-in-the-age-of-large-language-models-div.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/offenseval-2023-offensive-language-identification-in-the-age-of-large-language-models/2605A4C9E45354D36C0B732B49DB8CA3" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -276,7 +276,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
       </div>
       <div class="pub">
         <div class="t">ALEXSIS+: Improving Substitute Generation and Selection for Lexical Simplification with Information Retrieval</div>
-        <div class="v">North, Dmonte, Ranasinghe, Shardlow, Zampieri. <b>BEA Workshop, 2023</b></div>
+        <div class="v">Kai North, Alphaeus Dmonte, Tharindu Ranasinghe, Matthew Shardlow, Marcos Zampieri. <b>BEA Workshop, 2023</b></div>
         <div class="l">
           <a href="https://aclanthology.org/2023.bea-1.33.pdf" rel="noopener"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
           <a href="https://aclanthology.org/2023.bea-1.33/" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Abstract</a>
@@ -303,7 +303,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font:400 .85rem var(
     <div class="body">
       <div class="edu">
         <b>PhD, Information Technology</b>
-        <span>George Mason University. Expected May 2027. Advisor: Dr. Marcos Zampieri</span>
+        <span>George Mason University. Expected May 2027. Advisor: Dr. Marcos Marcos Zampieri</span>
         <span class="award"><i class="fa-solid fa-award" aria-hidden="true"></i>Doctoral Research Scholars Award</span>
       </div>
       <div class="edu">
